@@ -1,0 +1,14 @@
+﻿
+<h1>World Population Country Wise : {{chartName}}</h1>
+<div class="row" *ngIf="worldPopulation">
+    <div style="display: block">
+        <canvas baseChart
+                [data]="worldPopulation.population"
+                [labels]="worldPopulation.countries"
+                [chartType]="chartType"></canvas>
+    </div>
+</div>
+
+<button (click)="showPieChart()" style="font-size:24px">Pie Chart</button>
+<button (click)="showDoughnutChart()" style="font-size:24px">Doughnut Chart</button>
+<button (click)="showPolarAreaChart()" style="font-size:24px">Polar Area Chart</button>

@@ -1,0 +1,6 @@
+﻿<div style="display: block" *ngIf="bubbleChartData">
+    <canvas baseChart
+            [datasets]="bubbleChartData"
+            [colors]="chartColors"
+            [chartType]="bublleChartType"></canvas>
+</div>

@@ -1,0 +1,109 @@
+﻿
+<h1>Highest & Lowest Temprature for Next 3 Days</h1>
+
+<!--<div class="row" *ngIf="weatherForecast">
+    <div style="display: block">
+        <canvas baseChart
+                [datasets]="weatherForecast.weatherList"
+                [labels]="weatherForecast.chartLabels"
+                [options]="chartOptions"
+                [legend]="chartLegend"
+                [colors]="chartColors"
+                [chartType]="chartType"></canvas>
+    </div>
+</div>-->
+
+
+<div class="row" *ngIf="weatherForecast">
+    <div style="display: block">
+        <canvas baseChart
+                [datasets]="weatherForecast.weatherList"
+                [labels]="weatherForecast.chartLabels"
+                [options]="chartOptions"
+                [legend]="chartLegend"
+                [chartType]="chartType"></canvas>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">
+
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        <span style="font-weight:bold; font-size:20px;"> Highest & Lowest Temprature for Next 3 Days</span>
+    </div>
+
+    <div class="col-md-3">
+    </div>
+</div>-->
+
+
+<!--<h1>Highest & Lowest Temprature for Next 3 Days</h1>-->
+
+<!--<div *ngIf="useCustomColor">
+    <div class="row" *ngIf="weatherForecast">
+        <div style="display: block;">
+            <canvas baseChart max-width="350" max-height="350"
+                    [datasets]="weatherForecast.weatherList"
+                    [labels]="weatherForecast.chartLabels"
+                    [options]="chartOptions"
+                    [colors]="chartColors"
+                    [legend]="chartLegend"
+                    [chartType]="chartType"></canvas>
+        </div>
+    </div>
+</div>-->
+
+
+
+<!--<div *ngIf="!useCustomColor">
+    <div class="row" *ngIf="weatherForecast">
+        <div style="display: block">
+            <canvas baseChart
+                    [datasets]="weatherForecast.weatherList"
+                    [labels]="weatherForecast.chartLabels"
+                    [options]="chartOptions"
+                    [legend]="chartLegend"
+                    [chartType]="chartType"></canvas>
+        </div>
+    </div>
+</div>-->
+
+
+
+<!--<div class="row" *ngIf="weatherForecast">
+    <div style="display: block;">
+        <canvas baseChart max-width="350" max-height="350"
+                [datasets]="weatherForecast.weatherList"
+                [labels]="weatherForecast.chartLabels"
+                [options]="chartOptions"
+                [colors]="chartColorsNoFills"
+                [legend]="chartLegend"
+                [chartType]="chartType"></canvas>
+    </div>
+</div>-->
+
+
+
+
+
+
+<button (click)="showLineChart()" style="font-size:24px">Line Chart<i class="fa fa-line-chart"></i></button>
+<button (click)="showBarChart()" style="font-size:24px">Bar Chart <i class="fa fa-bar-chart"></i></button>
+

@@ -1,0 +1,22 @@
+﻿
+<h1>Colorful Scatter Chart</h1>
+
+<div style="display: block" *ngIf="scatterData">
+    <canvas baseChart
+            [datasets]="scatterData"
+            [options]="ScatterchartOptions"
+            [legend]="chartLegend"
+            [colors]="chartColors"
+            [chartType]="scatterChartType"></canvas>
+</div>
+
+
+<!--<div style="display: block" *ngIf="scatterData">
+    <canvas baseChart
+            [datasets]="scatterData"
+            [labels]="chartLabels"
+            [options]="ScatterchartOptions"
+            [legend]="chartLegend"
+            [colors]="chartColors"
+            [chartType]="scatterChartType"></canvas>
+</div>-->

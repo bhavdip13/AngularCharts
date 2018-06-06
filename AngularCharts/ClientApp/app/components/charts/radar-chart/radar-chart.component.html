@@ -1,0 +1,9 @@
+﻿<h1> Radar Chart Population(%) & GDP Nominal(%)</h1>
+<div class="row" *ngIf="chart">
+    <div style="display: block;">
+        <canvas baseChart
+                [datasets]="chart.chartData"
+                [labels]="chart.chartLabels"
+                [chartType]="chart.chartType"></canvas>
+    </div>
+</div>
